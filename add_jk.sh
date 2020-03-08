@@ -1,10 +1,8 @@
 #! /bin/bash
 
-usermod -m jingkai -s /bin/bash
+useradd -m jingkai -s /bin/bash
 
 sudo passwd jingkai
-
-su jingkai
 
 cd /home/jingkai
 
@@ -20,4 +18,4 @@ echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPLKXbiBDCDAdeL3/f9TQOarR7Sa48NOpPJj
 
 chmod 600 authorized_keys
 
-
+sudo chown -R jingkai:jingkai /home/jingkai/.ssh
