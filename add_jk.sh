@@ -10,7 +10,7 @@ chmod 700 /home/jingkai/.ssh
 
 touch /home/jingkai/.ssh/authorized_keys
 
-echo authorized_keys >> /home/jingkai/.ssh/authorized_keys
+cat ./authorized_keys >> /home/jingkai/.ssh/authorized_keys
 
 chmod 600 /home/jingkai/.ssh/authorized_keys
 
